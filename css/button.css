@@ -1,0 +1,85 @@
+/* button.css */
+
+/* Анимация для кнопки */
+.btn {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 
+  0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+background-color: #333;
+color: #fff;
+}
+
+/* Основной стиль кнопки */
+.overlay-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #4CAF50; /* Зеленый цвет фона */
+  color: white; /* Белый цвет текста */
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+}
+
+/* Стиль кнопки при наведении */
+.overlay-button:hover {
+  background-color: #45a049; /* Темно-зеленый цвет фона */
+}
+
+/* Стиль кнопки при нажатии */
+.overlay-button:active {
+  background-color: #3e8e41; /* Еще более темный зеленый цвет фона */
+}
+
+/* Стиль кнопки при отключенном состоянии */
+.overlay-button.disabled {
+  background-color: #ccc; /* Серый цвет фона */
+  cursor: not-allowed; /* Изменение курсора при наведении */
+}
+
+/* Стиль текста внутри кнопки */
+.overlay-button span {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.clear-button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 185px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #cc0000;
+}
+
+.clear-button:active {
+  background-color: #990000;
+}
+
+@media (max-width: 500px) {
+  .clear-button{
+      padding: 10px 38%;
+  }
+}

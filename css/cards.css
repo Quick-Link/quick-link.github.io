@@ -1,0 +1,74 @@
+/* cards.css */
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 295px;
+    height: 191px;
+    background-color: lightgray;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px;
+}
+    
+.card:hover .overlay {
+    opacity: 1;
+}
+    
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+    
+.overlay-content {
+    margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+    .overlay-content{
+        margin-bottom: 14px;
+    }
+    .card p
+    {
+        display: none;
+    }
+    .card-group{
+        text-align: center;
+    }
+    .overlay{
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-group{
+        text-align: center;
+    }
+    .overlay{
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 400px) {
+    .cards{
+        padding: 20px;
+    }
+}
